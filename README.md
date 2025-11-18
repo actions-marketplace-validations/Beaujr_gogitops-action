@@ -24,7 +24,9 @@ on:
     - 'master'  
 jobs:  
   build:  
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write  
     steps:  
     - uses: actions/checkout@v1
     - name: GoGitOps Step  
@@ -43,7 +45,9 @@ on:
     - 'master'  
 jobs:  
   build:  
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write    
     steps:  
     - uses: actions/checkout@v1
     - name: GoGitOps Step  
